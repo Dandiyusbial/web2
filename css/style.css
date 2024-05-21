@@ -9,6 +9,7 @@
     --coral: #ff000018;
     --gradient: linear-gradient(90deg, var(--red), var(--coral));
     --gradient2: linear-gradient(90deg, #02213F, #ffffff7e);
+    --gradient3: linear-gradient(90deg, #e7e7e7, #3953817e);
 /* css modal */
 --bg:#313131;
 }
@@ -26,7 +27,7 @@
 }
 
 *::selection {
-    background: var(--cream);
+    background: #6a6f7e;
     color: #fff;
 }
 
@@ -149,6 +150,7 @@ header .navbar a:hover {
 .home .swiper-slide {
     width: 30rem;
     height: 38rem;
+    margin: 0 1rem;
 }
 
 .home .swiper-slide img {
@@ -201,11 +203,11 @@ header .navbar a:hover {
 }
 
 .features .box-container .box:hover {
-    background: #474747b0;
+    background: #6e6c88b0;
 }
 
 .features .box-container .box:hover>* {
-    color: #4b1a07;
+    color: #ffffff;
 }
 /* CSS ABOUT */
 
@@ -225,8 +227,10 @@ header .navbar a:hover {
 
 .about .row .image img {
     width: 100%;
-    
+
 }
+
+
 
 .about .row .content {
     flex: 1 1 40rem;
@@ -238,6 +242,44 @@ header .navbar a:hover {
 }
 
 .about .row .content p {
+    color: #303030;
+    font-size: 1.7rem;
+    /* padding: 1rem 0; */
+}
+
+.about .row2 {
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+
+}
+
+.about .row2 .image {
+    flex: 1 1 40rem;
+    order: 2;
+}
+
+.about .row2 .image img {
+    width: 100%;
+
+}
+
+
+
+.about .row2 .content {
+    flex: 1 1 40rem;
+    order: 1;
+}
+
+.about .row2 .content h3 {
+    color: #0a3155;
+    font-size: 3.5rem;
+}
+
+.about .row2 .content p {
     color: #303030;
     font-size: 1.7rem;
     /* padding: 1rem 0; */
@@ -256,23 +298,24 @@ header .navbar a:hover {
 
 .usage .row .box-container .box {
     padding: 1rem 0;
+    
 }
 
+
 .usage .row .box-container i {
-    color: var(--coklat);
     padding: 1rem 0;
     font-size: 4.5rem;
 }
 
 .usage .row .box-container h3 {
-    color: #bd6003;
+    color:#0a3155;
     font-size: 2.5rem;
 }
 
 .usage .row .box-container p {
-    color: #d37b22;
+    color: #303030;
     padding: 1rem 0;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 
 
@@ -280,6 +323,67 @@ header .navbar a:hover {
 .usage .row .box-container:first-child {
     text-align: right;
 }
+
+
+
+/*roduct */
+
+.product .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.product .box-container .box {
+    background:var(--gradient3);
+    flex: 1 1 33rem;
+    text-align: center;
+    margin: 1rem;
+    padding: 2rem 0;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    border: .1rem solid rgba(0, 0, 0, .3);
+}
+
+.product .box-container .box .price {
+    font-size: 5rem;
+    color: #303030;
+    font-weight: bolder;
+}
+
+.product .box-container .box .price span {
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+
+.product .box-container .box h3 {
+    color: #fff;
+    background: var(--gradient);
+    font-size: 3rem;
+    padding: 1.5rem 0;
+    margin: 1rem 0;
+}
+
+.product .box-container .box ul {
+    list-style: none;
+    padding: 2rem 0;
+    border-bottom: .1rem solid #303030; 
+}
+
+.product .box-container .box ul li{
+    font-size: 1.7rem;
+    /* color: #211630; */
+}
+.product .box-container .box ul li:hover{
+    transform: scale(1.2);
+    
+}
+
+.product .box-container .box .btn {
+    margin-top: 2rem;
+}
+
 
 /* CSS REVIEW */
 
@@ -326,58 +430,8 @@ header .navbar a:hover {
 }
 
 
-/*roduct */
-
-.product .box-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.product .box-container .box {
-    flex: 1 1 33rem;
-    text-align: center;
-    margin: 1rem;
-    padding: 2rem 0;
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
-    border: .1rem solid rgba(0, 0, 0, .3);
-}
-
-.product .box-container .box .price {
-    font-size: 5rem;
-    color: #303030;
-    font-weight: bolder;
-}
-
-.product .box-container .box .price span {
-    font-size: 3rem;
-    font-weight: normal;
-}
 
 
-.product .box-container .box h3 {
-    color: #fff;
-    background: var(--gradient);
-    font-size: 3rem;
-    padding: 1.5rem 0;
-    margin: 1rem 0;
-}
-
-.product .box-container .box ul {
-    list-style: none;
-    padding: 2rem 0;
-    border-bottom: .1rem solid var(--coklat);
-}
-
-.product .box-container .box ul li {
-    font-size: 1.7rem;
-    color: #bd6003;
-}
-
-.product .box-container .box .btn {
-    margin-top: 2rem;
-}
 
 .contact {
     background: linear-gradient(#cfcfcf 50%, var(--black) 50.1%);
@@ -642,7 +696,10 @@ header .navbar a:hover {
 
     .usage .row .box-container .box {
         text-align: center;
+        padding: 1rem 0;
     }
+
+    
 
 }
 
@@ -706,6 +763,8 @@ header .navbar a:hover {
       }
 
 }
+
+
 
 @media(max-width:400px) {
     html {
