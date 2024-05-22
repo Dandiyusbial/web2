@@ -10,8 +10,8 @@
     --gradient: linear-gradient(90deg, var(--red), var(--coral));
     --gradient2: linear-gradient(90deg, #02213F, #ffffff7e);
     --gradient3: linear-gradient(90deg, #e7e7e7, #3953817e);
-/* css modal */
---bg:#313131;
+    /* css modal */
+    --bg: #313131;
 }
 
 * {
@@ -88,13 +88,14 @@ header {
 
 header .logo {
     font-size: 3rem;
-  font-weight: 900;
-  color: #fff;
-  font-style: italic;
+    font-weight: 900;
+    color: #fff;
+    font-style: italic;
 }
+
 header .logo span {
-/* color: var(--primary2); */
-font-size: 2rem;
+    /* color: var(--primary2); */
+    font-size: 2rem;
 }
 
 header .navbar a {
@@ -115,22 +116,22 @@ header .navbar a:hover {
 }
 
 .home {
-    background: url(../img/web-home2.jpg) no-repeat;
+    background: url(../img/thema\ web\ home.jpg) no-repeat;
     background: cover;
-    background-position: center;
+    background-position: top, center;
     min-height: 100vh;
     text-align: center;
-    /* background-color: #0a2a49; */
+    /* backgroun    d-color: #0a2a49; */
 }
 
 .home .content {
+    padding-top: 7rem;
     max-width: 70%;
     margin: 0 auto;
-    
+
 }
 
 .home .content h3 {
-    padding-top: 8rem;
     font-size: 4.8rem;
     color: #ffffff;
 }
@@ -209,6 +210,7 @@ header .navbar a:hover {
 .features .box-container .box:hover>* {
     color: #ffffff;
 }
+
 /* CSS ABOUT */
 
 .about .row {
@@ -233,7 +235,7 @@ header .navbar a:hover {
 
 
 .about .row .content {
-    flex: 1 1 40rem;
+    flex: 1 1 30rem;
 }
 
 .about .row .content h3 {
@@ -244,46 +246,10 @@ header .navbar a:hover {
 .about .row .content p {
     color: #303030;
     font-size: 1.7rem;
-    /* padding: 1rem 0; */
-}
-
-.about .row2 {
-    padding-top: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    /* flex-direction: column; */
-
-}
-
-.about .row2 .image {
-    flex: 1 1 40rem;
-    order: 2;
-}
-
-.about .row2 .image img {
-    width: 100%;
-
+    padding: 1rem 0;
 }
 
 
-
-.about .row2 .content {
-    flex: 1 1 40rem;
-    order: 1;
-}
-
-.about .row2 .content h3 {
-    color: #0a3155;
-    font-size: 3.5rem;
-}
-
-.about .row2 .content p {
-    color: #303030;
-    font-size: 1.7rem;
-    /* padding: 1rem 0; */
-}
 
 /* CSS USAGE */
 
@@ -298,7 +264,7 @@ header .navbar a:hover {
 
 .usage .row .box-container .box {
     padding: 1rem 0;
-    
+
 }
 
 
@@ -308,7 +274,7 @@ header .navbar a:hover {
 }
 
 .usage .row .box-container h3 {
-    color:#0a3155;
+    color: #0a3155;
     font-size: 2.5rem;
 }
 
@@ -326,6 +292,46 @@ header .navbar a:hover {
 
 
 
+.usage .row2 {
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+
+}
+
+.usage .row2 .image {
+    flex: 1 1 40rem;
+    order: 2;
+}
+
+.usage .row2 .image img {
+    width: 50%;
+
+
+}
+
+
+.usage .row2 .content {
+    flex: 1 1 40rem;
+    order: 1;
+}
+
+.usage .row2 .content h3 {
+    color: #0a3155;
+    font-size: 3.5rem;
+}
+
+.usage .row2 .content p {
+    color: #303030;
+    font-size: 1.7rem;
+    /* padding: 1rem 0; */
+}
+
+
+
 /*roduct */
 
 .product .box-container {
@@ -336,7 +342,7 @@ header .navbar a:hover {
 }
 
 .product .box-container .box {
-    background:var(--gradient3);
+    background: var(--gradient3);
     flex: 1 1 33rem;
     text-align: center;
     margin: 1rem;
@@ -368,16 +374,17 @@ header .navbar a:hover {
 .product .box-container .box ul {
     list-style: none;
     padding: 2rem 0;
-    border-bottom: .1rem solid #303030; 
+    border-bottom: .1rem solid #303030;
 }
 
-.product .box-container .box ul li{
+.product .box-container .box ul li {
     font-size: 1.7rem;
     /* color: #211630; */
 }
-.product .box-container .box ul li:hover{
+
+.product .box-container .box ul li:hover {
     transform: scale(1.2);
-    
+
 }
 
 .product .box-container .box .btn {
@@ -477,7 +484,8 @@ header .navbar a:hover {
     font-size: 1.8rem;
     width: 99%;
 }
-.contact .box-container .box .icon span a{
+
+.contact .box-container .box .icon span a {
     color: #0a3155;
 }
 
@@ -496,11 +504,64 @@ header .navbar a:hover {
     border: none;
 }
 
+/* CSS CONTACT FORM START*/
 
+.contact form {
+    margin-top: 4rem;
+    padding: 2rem;
+    background: #fff;
+    box-shadow: 0 .5rem 3rem rgba(0, 0, 0, .2);
+}
+
+.contact form .inputBox {
+    position: relative;
+}
+
+.contact form .inputBox input,
+.contact form .inputBox textarea {
+    width: 100%;
+    margin: 1.5rem 0;
+    padding: 1rem 0;
+    border-bottom: .2rem solid rgba(0, 0, 0, .3);
+    font-size: 1.7rem;
+    text-transform: none;
+}
+
+.contact form .inputBox textarea {
+    resize: none;
+    height: 15rem;
+}
+
+/* memberi style saat klik di form terdapat garis merah */
+.contact form .inputBox input:focus,
+.contact form .inputBox textarea:focus {
+    border-color: var(--red);
+}
+
+.contact form .inputBox label {
+    font-size: 1.7rem;
+    position: absolute;
+    top: 2.3rem;
+    left: 0;
+}
+
+.contact form .inputBox input:focus~label,
+.contact form .inputBox textarea:focus~label,
+.contact form .inputBox input:valid~label,
+.contact form .inputBox textarea:valid~label {
+    top: -.4rem;
+    font-size: 1.5rem;
+    color: #1A2033;
+}
+
+/* CSS CONTACT FORM END */
+/* 
 .footer {
     text-align: center;
     background-color: var(--cream);
+    margin: 0 5rem;
 }
+
 
 .footer .share a {
     height: 4.5rem;
@@ -527,7 +588,122 @@ header .navbar a:hover {
 
 .footer .creit span {
     color: #fff;
+} */
+
+
+.footer {
+    justify-content: center;
+    background-color: var(--cream);
+    margin: 0 5rem;
+    /* text-align: center; */
 }
+
+.footer .row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 2rem;
+
+}
+
+.footer .row .image {
+    padding-bottom: 5rem;
+    flex: 1 1 30rem;
+}
+
+.footer .row .image .logo {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #fff;
+    font-style: italic;
+    padding-bottom: 2rem;
+
+}
+
+.footer .row .image .logo span {
+    /* color: var(--primary2); */
+    font-size: 2rem;
+}
+
+.footer .row .image p {
+    color: #fff;
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+
+}
+
+
+.footer .row .image .btn2 {
+    display: inline-block;
+    padding: .7rem 2rem;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    background: var(--gradient3);
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.footer .row .image .btn2:hover {
+    transform: scale(1.1);
+}
+
+
+.footer .row .content {
+    /* background: rgba(255, 255, 255, 0.103); */
+    flex: 1 1 30rem;
+}
+
+.footer .row .content h1 {
+    color: #fff;
+    font-size: 2.5rem;
+    padding-bottom: .8rem;
+}
+
+.footer .row .content .link {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footer .row .content .link a {
+    font-size: 1.5rem;
+    color: #fff;
+    margin: .5rem;
+}
+
+.footer .row .content .link a span {
+    margin-left: 1rem;
+}
+
+.footer .row .content .link a:hover {
+    color: #999999;
+}
+
+
+
+.footer .row .content p {
+    color: #303030;
+    font-size: 1.7rem;
+    padding: 1rem 0;
+}
+
+
+.footer .credit {
+    text-align: center;
+    color: #fff;
+    padding-top: 5rem;
+    font-weight: normal;
+    font-size: .8rem;
+}
+
+.footer .credit span {
+    color: #fff;
+}
+
+
+
 
 /* start modal */
 .modal {
@@ -540,9 +716,9 @@ header .navbar a:hover {
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.7);
-  }
-  
-  .modal-container {
+}
+
+.modal-container {
     position: relative;
     background-color: rgb(121, 121, 121);
     background-image: linear-gradient(to top right, transparent 10%, #ebebeb 50%);
@@ -553,96 +729,96 @@ header .navbar a:hover {
     height: auto;
     animation: animateModal 0.5s;
     border-radius: 1rem;
-  }
-  
-  
-  .modal .modal-content img {
+}
+
+
+.modal .modal-content img {
     margin: auto 0;
-  
-  }
-  
-  .modal .modal-content .produk-content h3 {
+
+}
+
+.modal .modal-content .produk-content h3 {
     font-size: 4rem;
     color: var(--bg);
-  }
-  
-  .modal .modal-content .produk-content h4 {
+}
+
+.modal .modal-content .produk-content h4 {
     font-size: 1.8rem;
     color: var(--bg);
-    
-  }
-  
-  .modal .modal-content .produk-content p {
+
+}
+
+.modal .modal-content .produk-content p {
     color: var(--bg);
     padding-bottom: 0.5rem;
-  }
-  
-  .modal .box-container {
+}
+
+.modal .box-container {
     padding-top: 1rem;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-  }
-  
-  
-  .modal .box-container .box img {
+}
+
+
+.modal .box-container .box img {
     width: 8rem;
     height: 8rem;
-  }
-  
-  
-  
-  
-  .modal-container .button-back {
-    border-radius: 0.5rem;
-    background: var(--gradient2);  
 }
-  
-  .modal-container .button-back:hover {
+
+
+
+
+.modal-container .button-back {
+    border-radius: 0.5rem;
+    background: var(--gradient2);
+}
+
+.modal-container .button-back:hover {
     background: var(--gradient);
-  
-  }
-  
-  
-  /* Modal Animation */
-  @keyframes animateModal {
+
+}
+
+
+/* Modal Animation */
+@keyframes animateModal {
     from {
-      top: -300px;
-      opacity: 0;
+        top: -300px;
+        opacity: 0;
     }
-  
+
     to {
-      top: 0;
-      opacity: 1;
+        top: 0;
+        opacity: 1;
     }
-  }
-  
-  .modal-container .close-icon {
+}
+
+.modal-container .close-icon {
     position: absolute;
     color: #525050;
     right: 2rem;
-    top:2rem;
-  }
-  
-  
-  .modal-content {
+    top: 2rem;
+}
+
+
+.modal-content {
     display: flex;
     flex-wrap: nowrap;
-  }
-  
-  .modal-content img {
+}
+
+.modal-content img {
     height: 18rem;
     margin-right: 2rem;
     /* margin-bottom: 2rem; */
-  }
-  
-  .modal-content p {
+}
+
+.modal-content p {
     font-size: 1.5rem;
     line-height: 1.8rem;
     margin-top: 1.2rem;
-  }
-  
-  .modal-content a {
+}
+
+.modal-content a {
     display: flex;
     gap: 1rem;
     width: 4.3rem;
@@ -650,25 +826,26 @@ header .navbar a:hover {
     color: #ffff;
     margin-top: 1rem;
     padding: 1rem 1rem;
-  }
+}
 
-  .produk-star i{
+.produk-star i {
     padding: 1.5rem .1rem;
     font-size: 2rem;
-    
-  }
-  /*end modal  */
+
+}
+
+/*end modal  */
 
 
 
 
 
 
-  @media (max-width: 1330px) {
-    .navbar .catalog{
+@media (max-width: 1330px) {
+    .navbar .catalog {
         display: none;
     }
-  }
+}
 
 
 
@@ -699,7 +876,7 @@ header .navbar a:hover {
         padding: 1rem 0;
     }
 
-    
+
 
 }
 
@@ -758,9 +935,42 @@ header .navbar a:hover {
         text-align: center;
     }
 
+
+    .footer .row .image .logo {
+        font-size: 2.4rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .footer .row .image .logo span {
+        /* color: var(--primary2); */
+        font-size: 1.5rem;
+    }
+
+    .footer .row .image p {
+        font-size: 1.3rem;
+    }
+
+    .footer .row .image .btn2 {
+        font-size: 1.2rem;
+    }
+
+    .footer .row .content h1 {
+        font-size: 2rem;
+    }
+
+    .footer .row .content p {
+        font-size: 1.5rem;
+        padding: .8rem 0;
+    }
+
+    
+.footer .credit {
+    padding-top: 2rem;
+}
+
     .modal .modal-container .modal-content {
         flex-wrap: wrap;
-      }
+    }
 
 }
 
@@ -775,6 +985,9 @@ header .navbar a:hover {
         font-size: 3.5rem;
     }
 
-    
+    .footer {
+        margin: 0 2rem;
+    }
+
 
 }
