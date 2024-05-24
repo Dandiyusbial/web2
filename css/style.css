@@ -151,7 +151,7 @@ header .navbar a:hover {
 .home .swiper-slide {
     width: 30rem;
     height: 38rem;
-    margin: 0 1rem;
+    margin: 0 1.2rem;
 }
 
 .home .swiper-slide img {
@@ -704,6 +704,32 @@ header .navbar a:hover {
 
 
 
+.audio-icon-wrapper {
+    width: 4rem;
+    height: 4rem;
+    font-size: 4rem;
+    position: fixed;
+    bottom: 4rem;
+    right: 4rem;
+    cursor: pointer;
+    color: white;
+    opacity: 0.5;
+    mix-blend-mode: difference;
+    /* animation: rotating 4s linear infinite; */
+    transform-origin: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+  }
+  
+  .audio-icon-wrapper .fa-brands{
+    color: #888;
+    /* Ganti warna ikon menjadi abu-abu */
+  }
+
+
+
 
 /* start modal */
 .modal {
@@ -955,7 +981,7 @@ header .navbar a:hover {
     }
 
     .footer .row .content h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     .footer .row .content p {
