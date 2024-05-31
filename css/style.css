@@ -203,7 +203,7 @@ header .navbar a:hover {
   background: #6e6c88b0;
 }
 
-.features .box-container .box:hover > * {
+.features .box-container .box:hover>* {
   color: #ffffff;
 }
 
@@ -242,6 +242,18 @@ header .navbar a:hover {
 }
 
 /* CSS USAGE */
+
+.usage .heading h3 {
+  color: #0a3155;
+  font-size: 3rem;
+}
+
+.usage .heading h3 span {
+  color: #0a3155;
+  font-size: 2.5rem;
+  text-transform: none;
+}
+
 
 .usage .row {
   display: flex;
@@ -364,6 +376,7 @@ header .navbar a:hover {
   font-size: 1.7rem;
   padding: 1rem 0;
 }
+
 /* usage 3 */
 
 .usage3 .row {
@@ -418,6 +431,7 @@ header .navbar a:hover {
   font-size: 2.5rem;
   text-align: center;
 }
+
 .sertifikat .box-container .box {
   text-align: center;
   margin: 1rem;
@@ -430,14 +444,16 @@ header .navbar a:hover {
 
 .sertifikat .box-container .box img {
   height: auto;
-  width: 43rem;
+  width: 30rem;
   padding: 1rem;
   /* border-radius: 50%; */
   object-fit: cover;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
 .sertifikat .box-container .box p {
   font-size: 1.5rem;
+  font-weight: 600;
   color: var(--blue2);
   padding: 1rem 0;
 }
@@ -451,6 +467,7 @@ header .navbar a:hover {
   padding: 1rem 0;
   font-size: 2rem;
 }
+
 .sertifikat .detail-srt .btn {
   background: #61d383;
 }
@@ -511,6 +528,34 @@ header .navbar a:hover {
 .product .box-container .box .btn {
   margin-top: 2rem;
 }
+
+
+/* CSS GALLERY */
+.gallery .box-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.gallery .box-container .box {
+  text-align: center;
+  margin: .3rem;
+  padding: 2rem;
+  flex: 1 1 33rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+}
+
+.gallery .box-container .box img {
+  height: 30rem;
+  width: 30rem;
+  /* padding: 1rem; */
+  /* border-radius: 50%; */
+  object-fit: cover;
+}
+
 
 /* CSS REVIEW */
 
@@ -658,10 +703,10 @@ header .navbar a:hover {
   left: 0;
 }
 
-.contact form .inputBox input:focus ~ label,
-.contact form .inputBox textarea:focus ~ label,
-.contact form .inputBox input:valid ~ label,
-.contact form .inputBox textarea:valid ~ label {
+.contact form .inputBox input:focus~label,
+.contact form .inputBox textarea:focus~label,
+.contact form .inputBox input:valid~label,
+.contact form .inputBox textarea:valid~label {
   top: -0.4rem;
   font-size: 1.5rem;
   color: #1a2033;
@@ -1037,12 +1082,13 @@ header .navbar a:hover {
 
   .usage3 .row .image {
 
-display: none;  
-}
-  .usage3 .row .content {
-   text-align: center;
+    display: none;
   }
- 
+
+  .usage3 .row .content {
+    text-align: center;
+  }
+
   .sertifikat .heading {
     font-size: 3rem;
   }
